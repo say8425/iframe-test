@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 // document.addEventListener("DOMContentLoaded", function () {
 //   if (window.top !== window.top.parent) {
 //     //   window.parent.postMessage(
@@ -11,7 +13,7 @@
 //   }
 // });
 
-Jquery(document).ready(function () {
+$(document).ready(function () {
   window.parent.postMessage(
     {
       event: "HISTORY_PUSH_STATE",
